@@ -5,14 +5,14 @@ $dni=$_POST["dni"];
 $dir=$_POST["dire"];
 $ciu=$_POST["ciu"];
 
-$consulta="INSERT INTO clientes (nomyape,dni,direccion,ciudad) VALUES ('$nomyape',$dni,'$dir','$ciu')";
+$consulta="INSERT INTO cliente (nomyape,dni,direccion,ciudad) VALUES ('$nomyape',$dni,'$dir','$ciu')";
 $res=mysqli_query($con,$consulta);
 if($res)
 {
-	echo"consulta exitosa";
+	echo"consulta exitosa<br>";
 }
 else{
-	echo"se rompio todo";
+	echo"No se registro<br>";
 }
-
+echo"<a href='Home.html'>Volver al home</a>";
 ?>

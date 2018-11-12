@@ -15,7 +15,7 @@
 <body> 
 <?php 
 include("conexion.php"); 
-$consulta="SELECT * FROM clientes"; 
+$consulta="SELECT * FROM cliente"; 
 $res=mysqli_query($con,$consulta); 
 ?> 
 <h1>Formulario de Registro de Compras</h1> 

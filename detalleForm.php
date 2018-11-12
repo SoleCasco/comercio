@@ -8,9 +8,9 @@
 <body>
 <?php
 include("conexion.php");
-$consulta="SELECT compras.id FROM compras ORDER BY 1 DESC LIMIT 1";
+$consulta="SELECT compra.id FROM compra ORDER BY 1 DESC LIMIT 1";
 $res=mysqli_query($con,$consulta);
-$consulta2="SELECT * FROM productos";
+$consulta2="SELECT * FROM producto";
 $res2=mysqli_query($con,$consulta2);
 
 ?>

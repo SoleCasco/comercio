@@ -19,7 +19,7 @@ if($res){
 else{
 	echo"No se ejecuto<br>";	
 }
-echo"<a href='index.html'>ir a home</a>";
+echo"<a href='Home.html'>ir a home</a>";
 ?>
 </body>
 </html>

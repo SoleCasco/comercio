@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ProveedorForm</title>
+</head>
+
+<body>
+<h1>Registrar Proveedores</h1>
+<form method="post" action="procesarProv.php">
+<table>
+	<tr>
+    	<td>Razon Social</td>
+        <td><input type="text" name="razon"></td>
+    </tr>
+    <tr>
+    	<td>Direccion</td>
+        <td><input type="text" name="dire"></td>
+    </tr>
+    <tr>
+    	<td>Calidad</td>
+        <td>
+        	<select name="calidad">
+            <option value="">Seleccione Calidad</option>
+            <option value="Alta">Alta</option>
+            <option value="Media">Media</option>
+            <option value="Baja">Baja</option>
+
+            </select>
+        </td>
+    </tr>
+    <tr>
+    	<td colspan="2"><input type="submit" name="registrar" value="Registrar"></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

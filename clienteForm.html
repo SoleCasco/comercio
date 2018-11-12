@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro de Cliente</title>
+</head>
+<body>
+	<h1>Formulario de Registro de Clientes</h1>
+	<br><br>
+	<form method="Post" action="procesarCli.php">
+		<table border="2" width="300">
+			<tr>
+				<td>Nombre y Apellido</td>
+				<td><input type="text" name="nombre"></td>
+			</tr>
+			<tr>
+				<td>DNI</td>
+				<td><input type="int" name="dni"></td>
+			</tr>
+			<tr>
+				<td>Direccion</td>
+				<td><input type="text" name="dire"></td>
+			</tr>
+			<tr>
+				<td>Ciudad</td>
+				<td>
+					<select name="ciu">
+						<option value="">Seleccione Ciudad</option>
+						<option value="Rio Grande">Rio Grande</option>
+						<option value="Tolhuin">Tolhuin</option>
+						<option value="Ushuaia">Ushuaia</option>
+					</select>
+				</td>
+			</tr>
+			<tr><td colspan="2"><input type="submit" name="Registrar" value="Registrar"></td></tr>
+			
+		</table>
+		
+
+	</form>
+
+</body>
+</html>

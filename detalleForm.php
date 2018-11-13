@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Documento sin título</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 </head>
 
 <body>
@@ -14,15 +15,17 @@ $consulta2="SELECT * FROM producto";
 $res2=mysqli_query($con,$consulta2);
 
 ?>
-<h1>Carrito de compra</h1>
-<br><br>
-<form action="procesarDet.php" method="post">
-	<table border="2" width="200">
+<h1 class="alert-light text-center">Carrito de compra</h1>
+<br><br><br>
+<a href="inicio.html" class="btn btn-outline-info">Home</a>
+<br>
+<center><form action="procesarDet.php" method="post">
+	<table border="2" width="auto" class="table-info">
     	<tr>
         	<td>Codigo de Compra</td>
             <td><?php
 				while($vec=mysqli_fetch_array($res)){
-					echo"<input type='int' name='compraId' value='$vec[0]' readonly>";	
+					echo"<input type='int' name='compraId' value='$vec[0]' class='form-control' readonly>";	
 				}
             ?>
             </td>
@@ -30,7 +33,7 @@ $res2=mysqli_query($con,$consulta2);
         <tr>
         	<td>Producto</td>
             <td>
-            	<select name="prod">
+            	<select name="prod" class='form-control'>
                 	<option value="">Seleccione Producto</option>
 				<?php
                     while($vec2=mysqli_fetch_array($res2))
@@ -43,14 +46,12 @@ $res2=mysqli_query($con,$consulta2);
         </tr>
         <tr>
         	<td>Cantidad</td>
-            <td><input type="int" name="cant" required></td>
+            <td><input type="int" name="cant" class='form-control' required></td>
         </tr>
         <tr>
-        	<td colspan="2"><input type="submit" name="registrar" value="registrar"></td>
-            
+        	<td colspan="2" align="right"><input type="submit" name="registrar" value="registrar" class='btn btn-outline-primary'></td>   
         </tr>
     </table>
-
-</form>
+</form></center>
 </body>
 </html>

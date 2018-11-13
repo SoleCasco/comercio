@@ -2,10 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Documento sin título</title>
+<title>Procesar Compra</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 </head>
 
 <body>
+<br><br><br><br><br><br><br>
 <?php 
 include("conexion.php"); 
 $fecha=$_POST["fec"]; 
@@ -16,10 +18,10 @@ $cliente=$_POST["cli"];
 $consulta="INSERT INTO compra (fecha,formapago,cliente_id)VALUES ('$fecha','$formapago',$cliente)"; 
 $res=mysqli_query($con,$consulta); 
 if($res){ 
-echo"<h1>consulta exitosa</h1>";
-echo"<a href='detalleForm.php'>Cargar Productos</a>"; 
+echo"<h1 class='alert-light text-center'>Registro exitoso</h1><br>";
+echo"<a href='detalleForm.php' class='btn btn-outline-info'>Cargar Productos</a>"; 
 }else{ 
-echo"no se ejecuto consulta"; 
+echo"<h1 class='alert-light text-center'>No Se Registro</h1><br>"; 
 } 
 
 ?>

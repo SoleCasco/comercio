@@ -1,16 +1,9 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Documento sin título</title>
-</head>
-
-<body>
 <!DOCTYPE html> 
 <html lang="es" dir="ltr"> 
 <head> 
 <meta charset="utf-8"> 
 <title>Registro de Compras</title> 
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 </head> 
 <body> 
 <?php 
@@ -18,20 +11,22 @@ include("conexion.php");
 $consulta="SELECT * FROM cliente"; 
 $res=mysqli_query($con,$consulta); 
 ?> 
-<h1>Formulario de Registro de Compras</h1> 
+<h1 class="alert-light text-center">Formulario de Compra</h1> 
 <br><br> 
-<form class="" action="procesarComp.php" method="post"> 
-    <table border="2" width="200"> 
+<a href="inicio.html" class="btn btn-outline-info">Home</a>
+<br>
+<center><form action="procesarComp.php" method="post"> 
+    <table border="2" width="auto" class="table-info"> 
         <tr> 
             <td>Fecha</td> 
             <!--required verifica si el campo contiene algo--> 
-            <td><input type="date" name="fec" required></td> 
+            <td><input type="date" name="fec" class="form-control" required></td> 
         </tr> 
         <tr> 
             <td>Forma de Pago</td> 
             <td> 
-            <select class="" name="pag"> 
-            <option value="">Seleccione una Forma de Pago</option> 
+            <select name="pag" class="form-control"> 
+            <option value="">Seleccionar</option> 
             <option value="efectivo">Efectivo</option> 
             <option value="tarjetacred">Tarjeta de Credito</option> 
             </select> 
@@ -40,8 +35,8 @@ $res=mysqli_query($con,$consulta);
         <tr> 
             <td>Cliente</td> 
             <td> 
-            <select class="" name="cli"> 
-            <option value="">Seleccione Cliente</option> 
+            <select name="cli" class="form-control"> 
+            <option value="">Seleccionar</option> 
             <?php 
             //realizamos una busqueda en la variable $res donde estan almacenados 
             //los clientes 
@@ -57,11 +52,11 @@ $res=mysqli_query($con,$consulta);
         
         
         <tr> 
-        <td colspan="2"><input type="submit" name="Registrar" value="Registrar"></td> 
+        <td colspan="2" align="right"><input type="submit" name="Registrar" value="Registrar" class='btn btn-outline-primary'></td> 
         </tr> 
     
     </table> 
-</form> 
+</form></center> 
 
 </body> 
 </html>

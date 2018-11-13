@@ -2,10 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Documento sin título</title>
+<title>Procesar Registro</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 </head>
 
 <body>
+<br><br><br><br><br><br><br>
 <?php
 include("conexion.php");
 $razon=$_POST["razon"];
@@ -14,12 +16,12 @@ $cal=$_POST["calidad"];
 $consulta="INSERT INTO proveedor (razonsocial,direccion,calidad)VALUES('$razon','$dir','$cal')";
 $res=mysqli_query($con,$consulta);
 if($res){
-	echo"consulta exitosa<br>";
+	echo"<h1 class='alert-light text-center'>Registro exitoso</h1><br>";
 }
 else{
-	echo"No se ejecuto<br>";	
+	echo"<h1 class='alert-light text-center'>No se Registro</h1><br>";	
 }
-echo"<a href='Home.html'>ir a home</a>";
+echo"<a href='inicio.html' class='btn btn-outline-info'>ir a home</a>";
 ?>
 </body>
 </html>

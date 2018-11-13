@@ -1,3 +1,12 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Procesar Producto</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+</head>
+<body>
+<br><br><br><br><br><br><br>
 <?php
 include("conexion.php");
 $nomyape=$_POST["nombre"];
@@ -9,10 +18,12 @@ $consulta="INSERT INTO cliente (nomyape,dni,direccion,ciudad) VALUES ('$nomyape'
 $res=mysqli_query($con,$consulta);
 if($res)
 {
-	echo"consulta exitosa<br>";
+	echo"<h1 class='alert-light text-center'>Registro exitoso</h1><br>";
 }
 else{
-	echo"No se registro<br>";
+	echo"<h1 class='alert-light text-center'>No Se Registro</h1><br>";
 }
-echo"<a href='Home.html'>Volver al home</a>";
+echo"<a href='inicio.html' class='btn btn-outline-info'>ir a home</a>";
 ?>
+</body>
+</html>

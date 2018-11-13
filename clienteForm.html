@@ -2,28 +2,30 @@
 <html>
 <head>
 	<title>Registro de Cliente</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 </head>
 <body>
-	<h1>Formulario de Registro de Clientes</h1>
+	<h1 class="alert-light text-center">Formulario de Registro de Clientes</h1>
+    <a href="inicio.html" class="btn btn-outline-info">Home</a>
 	<br><br>
-	<form method="Post" action="procesarCli.php">
-		<table border="2" width="300">
+	<center><form method="Post" action="procesarCli.php">
+		<table border="2" width="auto" class="table-info">
 			<tr>
 				<td>Nombre y Apellido</td>
-				<td><input type="text" name="nombre"></td>
+				<td><input type="text" name="nombre"  class="form-control" ></td>
 			</tr>
 			<tr>
 				<td>DNI</td>
-				<td><input type="int" name="dni"></td>
+				<td><input type="int" name="dni"  class="form-control" ></td>
 			</tr>
 			<tr>
 				<td>Direccion</td>
-				<td><input type="text" name="dire"></td>
+				<td><input type="text" name="dire"  class="form-control" ></td>
 			</tr>
 			<tr>
 				<td>Ciudad</td>
 				<td>
-					<select name="ciu">
+					<select name="ciu"  class="form-control" >
 						<option value="">Seleccione Ciudad</option>
 						<option value="Rio Grande">Rio Grande</option>
 						<option value="Tolhuin">Tolhuin</option>
@@ -31,12 +33,11 @@
 					</select>
 				</td>
 			</tr>
-			<tr><td colspan="2"><input type="submit" name="Registrar" value="Registrar"></td></tr>
-			
+			<tr>
+            	<td colspan="2" align="right"><input type="submit" name="Registrar" value="Registrar" class='btn btn-outline-primary'></td>
+            </tr>
 		</table>
-		
-
-	</form>
+	</form></center>
 
 </body>
 </html>

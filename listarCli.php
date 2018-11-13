@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Documento sin título</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 </head>
 
 <body>
@@ -12,9 +13,10 @@ $consulta="SELECT * FROM cliente";
 $res=mysqli_query($con, $consulta);
 
 ?>
-<h1>Listado de Clientes</h1>
+<h1 class="alert-light text-center">Listado de Clientes</h1>
 <br><br>
-<center><table border="2" width="60%">
+<a href="inicio.html" class="btn btn-outline-info">Home</a>
+<center><table border="2" width="auto" class="table-info">
 <tr>
 	<td>ID</td>
 	<td>Nombre</td>
@@ -33,8 +35,8 @@ $res=mysqli_query($con, $consulta);
 			<td>$vec[2]</td>
 			<td>$vec[3]</td>
 			<td>$vec[4]</td>
-			<td><a href='modcli.php?cliente_id=$vec[0]'>Modificar</a></td>
-			<td><a href='modcli.php?cliente_id=$vec[0]'>Eliminar</a></td>
+			<td align='right'><a href='modcli.php?cliente_id=$vec[0]' class='btn btn-outline-primary'>Modificar</a></td>
+			<td align='right'><a href='modcli.php?cliente_id=$vec[0]' class='btn btn-outline-primary'>Eliminar</a></td>
 		</tr>
 		
 		";	

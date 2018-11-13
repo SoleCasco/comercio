@@ -18,13 +18,13 @@ $res=mysqli_query($con, $consulta);
 <a href="inicio.html" class="btn btn-outline-info">Home</a>
 <center><table border="2" width="auto" class="table-info">
 <tr>
-	<td>ID</td>
-	<td>Nombre</td>
-    <td>Dni</td>
-    <td>Direccion</td>
-    <td>Ciudad</td>
-    <td>Modificar</td>
-    <td>Eliminar</td>
+	<th>ID</th>
+	<th>Nombre</th>
+    <th>Dni</td>
+    <th>Direccion</th>
+    <th>Ciudad</td>
+    <th>Modificar</th>
+    <th>Eliminar</th>
 </tr>
 <?php
 	while($vec=mysqli_fetch_array($res)){

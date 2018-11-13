@@ -27,8 +27,8 @@ $res=mysqli_query($con,$consulta);
             <td> 
             <select name="pag" class="form-control"> 
             <option value="">Seleccionar</option> 
-            <option value="efectivo">Efectivo</option> 
-            <option value="tarjetacred">Tarjeta de Credito</option> 
+            <option value="Efectivo">Efectivo</option> 
+            <option value="Tarjeta">Tarjeta de Credito</option> 
             </select> 
             </td> 
         </tr>  

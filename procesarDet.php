@@ -24,7 +24,7 @@ while($vec=mysqli_fetch_array($res)){
 		$consulta2="INSERT INTO detallecompra (compra_id, producto_id, cantidad) VALUES ($comp,$prod,$cant)";
 		$res2=mysqli_query($con, $consulta2);
 		if($res2){
-			if($vec[2]=="efectivo"){
+			if($vec[2]=="Efectivo"){
 				
 				$subt= $cant * $vec[7];
 				$importe=$subt -($subt * 0.1);
@@ -51,7 +51,7 @@ while($vec=mysqli_fetch_array($res)){
 }
 }
 else{
-	echo"error de consulta.";
+	echo"<h1 class='alert-light text-center'>Error de Consulta</h1><br>";
 	}
 echo"<a href='inicio.html' class='btn btn-outline-info'>Finalizar Compra</a>";
 ?>

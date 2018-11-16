@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<?php 
+<?php
 include("conexion.php");
 $consulta="SELECT * FROM cliente";
 $res=mysqli_query($con, $consulta);
@@ -36,10 +36,10 @@ $res=mysqli_query($con, $consulta);
 			<td>$vec[3]</td>
 			<td>$vec[4]</td>
 			<td align='right'><a href='modcli.php?cliente_id=$vec[0]' class='btn btn-outline-primary'>Modificar</a></td>
-			<td align='right'><a href='modcli.php?cliente_id=$vec[0]' class='btn btn-outline-primary'>Eliminar</a></td>
+			<td align='right'><a href='eliminarcli.php?cliente_id=$vec[0]' class='btn btn-outline-primary'>Eliminar</a></td>
 		</tr>
-		
-		";	
+
+		";
 	}
 ?>
 </table></center>

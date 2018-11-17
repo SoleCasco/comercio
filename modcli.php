@@ -17,7 +17,7 @@ $consulta="SELECT * FROM cliente WHERE id=$id";
 $res=mysqli_query($con, $consulta);
 while($vec=mysqli_fetch_array($res)){
 echo"
-	<center><form method='post' action=''>
+	<center><form method='post' action='procesarModCli.php'>
 		<table border='2' width='30%' class='table-info'>
 			<tr>
 			<td>ID</td>

@@ -19,11 +19,11 @@ $consulta="INSERT INTO compra (fecha,formapago,cliente_id)VALUES ('$fecha','$for
 $res=mysqli_query($con,$consulta); 
 if($res){ 
 echo"<h1 class='alert-light text-center'>Registro exitoso</h1><br>";
-echo"<a href='detalleForm.php' class='btn btn-outline-info'>Cargar Productos</a>"; 
+echo"<center><a href='detalleForm.php' class='btn btn-outline-info btn-lg btn-block'>Cargar Productos</a></center>"; 
 }else{ 
 echo"<h1 class='alert-light text-center'>No Se Registro</h1><br>"; 
 } 
-
+echo"<center><a href='inicio.html' class='btn btn-outline-info btn-lg btn-block'>ir a home</a></center>";
 ?>
 </body>
 </html>

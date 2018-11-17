@@ -19,11 +19,11 @@ include("conexion.php");
 	{
 		if($vec[1]==$usuario & $vec[2]==$password){
 		echo"<h1 class='alert-light text-center'>Bienvenido $usuario</h1><br>";
-		echo"<a href='inicio.html' class='btn btn-outline-info'>Home</a>";
+		echo"<center><a href='inicio.html' class='btn btn-outline-info btn-lg btn-block'>ir a home</a></center>";
 	}
 	else{
 		echo"<h1 class='alert-light text-center'>No Se Encuentra Registrado</h1><br>";
-		echo"<a href='index.html' class='btn btn-outline-info'>Inicio</a>";
+		echo"<center><a href='index.html' class='btn btn-outline-info btn-lg btn-block'>Inicio</a></center>";
 	}
 }
 ?>

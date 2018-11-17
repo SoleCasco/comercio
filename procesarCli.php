@@ -23,7 +23,8 @@ if($res)
 else{
 	echo"<h1 class='alert-light text-center'>No Se Registro</h1><br>";
 }
-echo"<a href='inicio.html' class='btn btn-outline-info'>ir a home</a>";
+echo"<center><a href='inicio.html' class='btn btn-outline-info btn-lg btn-block'>ir a home</a></center>";
 ?>
+
 </body>
 </html>

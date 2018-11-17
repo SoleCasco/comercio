@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
 <?php
 include("conexion.php");
 $razon=$_POST["razon"];
@@ -21,7 +21,7 @@ if($res){
 else{
 	echo"<h1 class='alert-light text-center'>No se Registro</h1><br>";	
 }
-echo"<a href='inicio.html' class='btn btn-outline-info'>ir a home</a>";
+echo"<center><a href='inicio.html' class='btn btn-outline-info btn-lg btn-block'>ir a home</a></center>";
 ?>
 </body>
 </html>

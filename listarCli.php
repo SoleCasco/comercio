@@ -36,14 +36,8 @@ $res=mysqli_query($con, $consulta);
 			<td>$vec[3]</td>
 			<td>$vec[4]</td>
 			<td align='right'><a href='modcli.php?cliente_id=$vec[0]' class='btn btn-outline-primary'>Modificar</a></td>
-<<<<<<< HEAD
 			<td align='right'><a href='eliminarCli.php?cliente_id=$vec[0]' class='btn btn-outline-primary'>Eliminar</a></td>
-=======
-			<td align='right'><a href='eliminarcli.php?cliente_id=$vec[0]' class='btn btn-outline-primary'>Eliminar</a></td>
->>>>>>> e4d0187272677c0fe818a7494458427ad54bab39
-		</tr>
-
-		";
+		</tr>";
 	}
 ?>
 </table></center>

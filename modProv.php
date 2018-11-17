@@ -7,6 +7,7 @@
 </head>
 
 <body>
+<br><br>
 <h1 class="alert-light text-center">Formulario de Modificacion</h1>
 <br><br><br>
 <a href="inicio.html" class="btn btn-outline-info">Home</a>

@@ -15,13 +15,12 @@ include("conexion.php");
 	$res=mysqli_query($con,$consulta);
 	if($res){
 		echo"<h1 class='alert-light text-center'>Registro Exitoso</h1><br>";
-		echo"<a href='index.html' class='btn btn-outline-info'>Inicio</a>";
 	}
 	else{
 		echo"<h1 class='alert-light text-center'>No Se Encuentra Registrado</h1><br>";
-		echo"<a href='index.html' class='btn btn-outline-info'>Inicio</a>";
+		
 	}
-
+echo"<a href='index.html' class='btn btn-outline-info btn-lg btn-block'>Inicio</a>";
 ?>
 </body>
 </html>

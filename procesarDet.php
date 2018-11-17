@@ -39,13 +39,13 @@ while($vec=mysqli_fetch_array($res)){
 			$consulta4="UPDATE producto SET stock=($vec[9]- $cant) WHERE producto.id= $prod";
 			$res4=mysqli_query($con, $consulta4);
 			echo"<h1 class='alert-light text-center'>Registro exitoso</h1><br>";
-			echo"<a href='compraForm.php' class='btn btn-outline-info'>Cargar otro Producto</a><br>";
+			echo"<a href='compraForm.php' class='btn btn-outline-info btn-lg btn-block'>Cargar otro Producto</a><br>";
 			
 		}
 	}
 	else{
 		echo"<h1 class='alert-light text-center'>Producto sin Stock</h1><br>";
-		echo"<a href='compraForm.php' class='btn btn-outline-info'>Cargar otro Producto</a><br>";
+		echo"<center><a href='compraForm.php' class='btn btn-outline-info btn-lg btn-block'>Cargar otro Producto</a></center><br>";
 		
 	}
 }
@@ -53,7 +53,7 @@ while($vec=mysqli_fetch_array($res)){
 else{
 	echo"<h1 class='alert-light text-center'>Error de Consulta</h1><br>";
 	}
-echo"<a href='inicio.html' class='btn btn-outline-info'>Finalizar Compra</a>";
+echo"<center><a href='inicio.html' class='btn btn-outline-info btn-lg btn-block'>ir a home</a></center>";
 ?>
 </body>
 </html>

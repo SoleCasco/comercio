@@ -6,6 +6,7 @@
     <title></title>
   </head>
   <body>
+  <br><br><br>
     <?php
     include("conexion.php");
     $id=$_POST["id"];
@@ -16,12 +17,12 @@
 
     $res=mysqli_query($con, $consulta);
     if($res){
-      echo"<h1 class='alert_light text-center'>Registro exitoso</h1><br>";
+      echo"<h1 class='alert-light text-center'>Registro exitoso</h1><br>";
     }else{
-      echo"<h1 class='alert_light text-center'>no se Registro</h1><br>";
+      echo"<h1 class='alert-light text-center'>no se Registro</h1><br>";
     }
 
-    echo"<a href='inicio.html' class='btn btn-outline-info'>Ir a Home</a>";
+  echo"<center><a href='inicio.html' class='btn btn-outline-info btn-lg btn-block'>ir a home</a></center>";
 
 
      ?>

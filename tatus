@@ -1,0 +1,47 @@
+[33mcommit 7854794a88f8c5abbd21d6fd16c5cf47efcb9fc0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Walter Chafer <walterchafer@gmail.com>
+Date:   Fri Nov 16 16:38:44 2018 -0300
+
+    Se crearon los archivos listarProv, modProv y procesarModProv. tTambien se modifico el archivo de inicio
+
+[33mcommit 6859b5168e01ae0c7d2e306fd4a1c6f8c86ca54f[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: unknown <cascosole@gmail.com>
+Date:   Tue Nov 13 02:55:15 2018 -0300
+
+    cambios
+
+[33mcommit 6a5881a1b3018329e35da66bbc34de38d0d4b3e3[m
+Author: unknown <cascosole@gmail.com>
+Date:   Mon Nov 12 23:15:00 2018 -0300
+
+    agregue bootstrap
+
+[33mcommit 51a41a1e1ceb2101dc2e419ac9c40c9a2dc60119[m
+Author: unknown <cascosole@gmail.com>
+Date:   Mon Nov 12 17:06:08 2018 -0300
+
+    agregue listado de clientes
+
+[33mcommit 85580490d772495f581fefd3427faaa60fed1f11[m
+Author: unknown <cascosole@gmail.com>
+Date:   Mon Nov 12 14:44:38 2018 -0300
+
+    sql y cambio en las tablas
+
+[33mcommit e7d48834c4c019ac6129515805e200e2d59c7652[m
+Author: unknown <cascosole@gmail.com>
+Date:   Mon Nov 12 13:50:32 2018 -0300
+
+    estilos
+
+[33mcommit 717276af02b2683c9581614658d262c4dd511334[m
+Author: SoleCasco <31989885+SoleCasco@users.noreply.github.com>
+Date:   Mon Nov 12 13:41:31 2018 -0300
+
+    primer push
+
+[33mcommit 21edb68e55d95faaed3a1cfbc86cfb2b7ec0586a[m
+Author: SoleCasco <31989885+SoleCasco@users.noreply.github.com>
+Date:   Mon Nov 12 13:39:43 2018 -0300
+
+    Initial commit

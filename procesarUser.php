@@ -10,6 +10,7 @@
 include("conexion.php");
 	$usuario=$_POST["usuario"];
 	$password=$_POST["contra"];
+
 	
 	$consulta="INSERT INTO usuario (user,pass) VALUES ('$usuario','$password')";
 	$res=mysqli_query($con,$consulta);

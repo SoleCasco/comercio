@@ -9,13 +9,13 @@
 <body>
 <?php
 include("conexion.php");
-$consulta="SELECT * FROM producto";
+$consulta="SELECT producto.*, proveedor.razonsocial FROM producto,proveedor WHERE producto.proveedor_id=proveedor.id";
 $res=mysqli_query($con, $consulta);
 
 ?>
 <h1 class="alert-light text-center">Listado de Productos</h1>
 <br><br>
-<a href="inicio.html" class="btn btn-outline-info">Home</a>
+<a href="inicio.php" class="btn btn-outline-info">Home</a>
 <center><table border="2" width="auto" class="table-info">
 <tr>
 	<th>ID</th>
@@ -23,7 +23,7 @@ $res=mysqli_query($con, $consulta);
     <th>Precio</th>
     <th>Categoria</th>
     <th>Stock</th>
-    <th>Proveedor ID</th>
+    <th>Proveedor</th>
     <th>Modificar</th>
     <th>Eliminar</th>
 </tr>
@@ -35,8 +35,8 @@ $res=mysqli_query($con, $consulta);
 			<td>$vec[1]</td>
 			<td>$vec[2]</td>
 			<td>$vec[3]</td>
-      <td>$vec[4]</td>
-      <td>$vec[5]</td>
+			<td>$vec[4]</td>
+			<td>$vec[6]</td>
 			<td align='right'><a href='modProd.php?producto_id=$vec[0]' class='btn btn-outline-primary'>Modificar</a></td>
 			<td align='right'><a href='eliminarProd.php?producto_id=$vec[0]' class='btn btn-outline-primary'>Eliminar</a></td>
 		</tr>

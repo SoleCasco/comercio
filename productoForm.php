@@ -8,7 +8,7 @@
 <body>
 <h1 class="alert-light text-center">Formulario producto</h1>
 <br><br><br>
-<a href="inicio.html" class="btn btn-outline-info">Home</a>
+<a href="inicio.php" class="btn btn-outline-info">Home</a>
 <br><br>
 <?php
 include("conexion.php");

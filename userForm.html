@@ -9,17 +9,22 @@
 <body>
 <h1 class="text-center alert-light">Formulario Usuario</h1>
 <br><br><br>
-
+<a href="inicio.php" class="btn btn-outline-info">Home</a>
 <form method="post" action="procesarUser.php">
 	<table width="auto" class="table-info table-bordered" align="center">
     <tr>
     	<th>Usuario</th>
     	<th>Contraseña</th>
+        <th>Admin</th>
         <td rowspan="2"><input type="submit" value="Registrar" class="btn btn-outline-info"></td>
     </tr>
     <tr>
     	<td><input type="text" name="usuario" class="form-control" required></td>
     	<td><input type="password" name="contra" class="form-control" required></td>
+        <td>
+        	<input type="radio" name="admin" value="Si">Si<br>
+            <input type="radio" name="admin" value="No">No
+        </td>
     </tr>
     <tr>
     </table>

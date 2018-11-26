@@ -15,7 +15,7 @@ $res=mysqli_query($con, $consulta);
 ?>
 <h1 class="alert-light text-center">Listado de Proveedores</h1>
 <br><br>
-<a href="inicio.html" class="btn btn-outline-info">Home</a>
+<a href="inicio.php" class="btn btn-outline-info">Home</a>
 <center><table border="2" width="auto" class="table-info">
 <tr>
 	<th>ID</th>

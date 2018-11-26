@@ -9,7 +9,7 @@
 <body>
 <h1 class="alert-light text-center">Calcular Recaudación</h1>
 <br><br><br>
-<a href="inicio.html" class="btn btn-outline-info">Home</a>
+<a href="inicio.php" class="btn btn-outline-info">Home</a>
 <br>
 <center><form method="post" action="totalVentas.php">
 <table width="auto" border="2" class="table-info">

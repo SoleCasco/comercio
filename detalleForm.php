@@ -17,7 +17,7 @@ $res2=mysqli_query($con,$consulta2);
 ?>
 <h1 class="alert-light text-center">Carrito de compra</h1>
 <br><br><br>
-<a href="inicio.html" class="btn btn-outline-info">Home</a>
+<a href="inicio.php" class="btn btn-outline-info">Home</a>
 <br>
 <center><form action="procesarDet.php" method="post">
 	<table border="2" width="auto" class="table-info">

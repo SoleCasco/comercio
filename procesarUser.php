@@ -11,37 +11,32 @@ include("conexion.php");
 	$usuario=$_POST["usuario"];
 	$password=$_POST["contra"];
 
-	$consulta1="SELECT * FROM usuario";
-	$res=mysqli_query($con,$consulta1);
 
-
-	if ($usuario!="" & $password!="")
-	{
 			if (strlen($password) >= 8)
 			{
-	//aqui se verifica qeu el valor ingresado como usuario no exixta ya en la BD
-	//esta parte no funciona tira un error
-			if (in_array($usuario, $consulta))
-			{
-				$consulta="INSERT INTO usuario (user,pass) VALUES ('$usuario','$password')";
-				echo"<h1 class='alert-light text-center'>Registro Exitoso</h1><br>";
-				echo"<a href='index.html' class='btn btn-outline-info btn-lg btn-block'>Inicio</a>";
+				$consulta1="SELECT * FROM usuario";
+				$res1=mysqli_query($con,$consulta1);
+				while($vec=mysqli_fetch_array($res1))
+				{
+					if($vec[1]==$usuario){
+						echo "El usuario ya existe, por favor ingrese otro nombre de usuario";
+						$ban=1;
+					}
+					
 
-			}else{
-				echo "El usuario ya existe, por favor ingrese otro nombre de usuario";
+				}
+
+			if($ban==0){
+				$consulta="INSERT INTO usuario (user,pass) VALUES ('$usuario','$password')";
+				$res=mysqli_query($con,$consulta);
+				echo"<h1 class='alert-light text-center'>Registro Exitoso</h1><br>";
+				echo"<a href='inicio.php' class='btn btn-outline-info btn-lg btn-block'>Inicio</a>";
 			}
-				}else{
+
+			else{
 					echo"<h1 class='alert-light text-center'>La contraseña debe tener 8 o mas caracteres</h1><br>";
 					echo"<center><a href='userForm.html' class='btn btn-outline-info btn-lg btn-block'>Volver</a></center>";
 			}
-
-		}else{
-			echo"<h1 class='alert-light text-center'>El campo usuario o contraseña esta vacio</h1><br>";
-			echo"<center><a href='userForm.html' class='btn btn-outline-info btn-lg btn-block'>Volver</a></center>";
-		}
-
-
-
 ?>
 </body>
 </html>

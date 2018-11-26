@@ -13,7 +13,7 @@ $res=mysqli_query($con,$consulta);
 ?> 
 <h1 class="alert-light text-center">Formulario de Compra</h1> 
 <br><br> 
-<a href="inicio.html" class="btn btn-outline-info">Home</a>
+<a href="inicio.php" class="btn btn-outline-info">Home</a>
 <br>
 <center><form action="procesarComp.php" method="post"> 
     <table border="2" width="auto" class="table-info"> 

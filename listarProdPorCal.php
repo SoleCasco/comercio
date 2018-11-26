@@ -9,7 +9,7 @@
 <body>
 <h1 class="alert-light text-center">Listar Productos por Calidad</h1>
 <br><br><br>
-<a href="inicio.html" class="btn btn-outline-info">Home</a>
+<a href="inicio.php" class="btn btn-outline-info">Home</a>
 <br><br>
 <center><form method="post" action="listarProdPorCal.php">
 	<table width="10%" border="2" class="table-info">

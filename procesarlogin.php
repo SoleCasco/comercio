@@ -8,14 +8,14 @@
 
 <body>
 <br><br>
-<?php 
+<?php
 include("conexion.php");
 	$usuario=$_POST["usuario"];
 	$password=$_POST["contra"];
-	
+
 	$consulta="SELECT * FROM usuario";
 	$res=mysqli_query($con,$consulta);
-	while($vec=mysqli_fetch_array($res))
+	if($vec=mysqli_fetch_array($res))
 	{
 		if($vec[1]==$usuario & $vec[2]==$password){
 		echo"<h1 class='alert-light text-center'>Bienvenido $usuario</h1><br>";

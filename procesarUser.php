@@ -11,8 +11,8 @@ include("conexion.php");
 	$usuario=$_POST["usuario"];
 	$password=$_POST["contra"];
 
-	$consulta="SELECT user FROM usuario";
-	$res=mysqli_query($con,$consulta);
+	$consulta1="SELECT * FROM usuario";
+	$res=mysqli_query($con,$consulta1);
 
 
 	if ($usuario!="" & $password!="")
@@ -21,7 +21,7 @@ include("conexion.php");
 			{
 	//aqui se verifica qeu el valor ingresado como usuario no exixta ya en la BD
 	//esta parte no funciona tira un error
-			if (array_search('$usuario', $res))
+			if (in_array($usuario, $consulta))
 			{
 				$consulta="INSERT INTO usuario (user,pass) VALUES ('$usuario','$password')";
 				echo"<h1 class='alert-light text-center'>Registro Exitoso</h1><br>";

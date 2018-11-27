@@ -53,7 +53,7 @@ while($vec=mysqli_fetch_array($res)){
 else{
 	echo"<h1 class='alert-light text-center'>Error de Consulta</h1><br>";
 	}
-echo"<center><a href='inicio.html' class='btn btn-outline-info btn-lg btn-block'>ir a home</a></center>";
+echo"<center><a href='inicio.php' class='btn btn-outline-info btn-lg btn-block'>ir a home</a></center>";
 ?>
 </body>
 </html>

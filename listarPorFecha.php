@@ -8,7 +8,7 @@
 <body>
 <h1 class="alert-light text-center">Listar Compras Por Fecha</h1>
 <br><br><br><br>
-<a href="inicio.html" class="btn btn-outline-info">Home</a>
+<a href="inicio.php" class="btn btn-outline-info">Home</a>
 <br><br>
 <center><form method="post" action="listarPorFecha.php">
 	<table width="auto" border="2" class="table-info">
@@ -38,6 +38,7 @@ if(isset($_POST["Listar"])){
 	echo"
 	<center><table width='auto' border='2' class='table-info'>
 		<tr>
+			<th>ID</th>
 			<th>Fecha de Compra</th>
 			<th>Forma de Pago</th>
 			<th>Total</th>
@@ -50,6 +51,7 @@ if(isset($_POST["Listar"])){
 	while($vec=mysqli_fetch_array($res)){
 		echo"
 		<tr>
+			<td>$vec[0]</td>
 			<td>$vec[1]</td>
 			<td>$vec[2]</td>
 			<td>$vec[3]</td>

@@ -13,7 +13,7 @@ $res=mysqli_query($con,$consulta);
 ?>
 <h1 class="alert-light text-center">Listar Productos por Categoria</h1>
 <br><br><br>
-<a href="inicio.html" class="btn btn-outline-info">Home</a>
+<a href="inicio.php" class="btn btn-outline-info">Home</a>
 <br><br>
 <center><form method="post" action="listarcomporcli.php">
 	<table width="15%" border="2" class="table-info">

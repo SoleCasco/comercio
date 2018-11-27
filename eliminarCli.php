@@ -31,7 +31,7 @@ if($ban==0){
 }
 
 
-echo"<a href='inicio.html' class='btn btn-outline-info btn-lg btn-block'>ir a home</a>";
+echo"<a href='inicio.php' class='btn btn-outline-info btn-lg btn-block'>ir a home</a>";
 ?>
 </body>
 </html>

@@ -9,7 +9,11 @@
 <body>
 <?php
 include("conexion.php");
+<<<<<<< HEAD
 $consulta="SELECT producto.*,proveedor.razonsocial FROM producto,proveedor WHERE producto.proveedor_id=proveedor.id";
+=======
+$consulta="SELECT producto.*, proveedor.razonsocial FROM producto,proveedor WHERE producto.proveedor_id=proveedor.id";
+>>>>>>> 1fd16a5b138f8b75e6417a33531d5bfbf920fd51
 $res=mysqli_query($con, $consulta);
 
 ?>

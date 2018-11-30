@@ -11,10 +11,10 @@
     include("conexion.php");
     $id=$_GET["producto_id"];
     $ban=0;
-    $consulta="SELECT * FROM producto WHERE producto_id=$id";
-    $res=mysqli_query($con,$consulta);
-    while($vec=mysqli_fetch_array($res)){
-      if($vec[5]==0){
+    $consulta="SELECT * FROM producto WHERE proveedor_id=$id";
+    $res=mysqli_query($con,$consulta) or die("MySQL error: " . mysqli_error($con) . "<hr>\nQuery: $consulta");
+    while($vec=mysqli_fetch_array($res)) {
+      if($vec[4]==0){
         $consulta1="DELETE FROM producto WHERE producto.id=$id";
         $res1=mysqli_query($con,$consulta1);
         echo"<h1 class='alert-light text-center'>Producto Eliminado</h1><br>";

@@ -25,10 +25,10 @@ while($vec=mysqli_fetch_array($res)){
 		$res2=mysqli_query($con, $consulta2);
 		if($res2){
 			if($vec[2]=="Efectivo"){
-				
+
 				$subt= $cant * $vec[7];
 				$importe=$subt -($subt * 0.1);
-				
+
 			}
 			else{
 				$subt=$cant * $vec[7];
@@ -40,13 +40,13 @@ while($vec=mysqli_fetch_array($res)){
 			$res4=mysqli_query($con, $consulta4);
 			echo"<h1 class='alert-light text-center'>Registro exitoso</h1><br>";
 			echo"<a href='compraForm.php' class='btn btn-outline-info btn-lg btn-block'>Cargar otro Producto</a><br>";
-			
+
 		}
 	}
 	else{
 		echo"<h1 class='alert-light text-center'>Producto sin Stock</h1><br>";
 		echo"<center><a href='compraForm.php' class='btn btn-outline-info btn-lg btn-block'>Cargar otro Producto</a></center><br>";
-		
+
 	}
 }
 }
@@ -54,6 +54,10 @@ else{
 	echo"<h1 class='alert-light text-center'>Error de Consulta</h1><br>";
 	}
 echo"<center><a href='inicio.php' class='btn btn-outline-info btn-lg btn-block'>ir a home</a></center>";
+if ($vec[9]<=4){
+	echo '<script language="javascript">alert("El Stock del producto comprado es igual o menor a 4");</script>';
+
+}
 ?>
 </body>
 </html>
